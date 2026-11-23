@@ -2,10 +2,8 @@
 
 Coloque neste diretório sua foto com um destes nomes:
 
-- `foto-perfil.webp` (recomendado);
 - `foto-perfil.png`;
-- `foto-perfil.jpg`;
-- `foto-perfil.jpeg`.
+
 
 O portfólio detectará automaticamente o formato disponível.
 
