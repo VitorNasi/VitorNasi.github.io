@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A0A0F">
+  <meta name="author" content="Vitor Augusto Nasi">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Vitor Augusto Nasi | Desenvolvedor em Formação">
+  <meta property="og:description" content="Portfólio de Vitor Augusto Nasi, estudante de programação e tecnologia.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <title>Vitor Augusto Nasi | Desenvolvedor em Formação</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <header class="header" id="topo">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Ir para o início"><span>V</span>N</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a class="nav-link active" href="#inicio">Início</a></li>
+        <li><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        <li><a class="nav-link" href="#projetos">Projetos</a></li>
+        <li><a class="nav-link" href="#formacao">Formação</a></li>
+        <li><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section" id="inicio">
+      <div class="hero-grid container">
+        <div class="hero-content reveal">
+          <p class="eyebrow"><span class="status-dot"></span>Disponível para oportunidades de aprendizado</p>
+          <h1>Olá, eu sou<br><span class="gradient-text">Vitor Augusto Nasi</span></h1>
+          <p class="hero-role">Estudante de Programação <span>|</span> Desenvolvedor em Formação</p>
+          <p class="hero-description">Apaixonado por desenvolvimento de software e pelo universo da computação. Estou construindo minha jornada na tecnologia por meio de estudos e projetos práticos.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Ver projetos <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="assets/curriculo.pdf" download id="resume-link">Baixar currículo <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-socials" aria-label="Redes sociais">
+            <a href="https://github.com/VitorNasi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+            <a href="#contato" aria-label="LinkedIn">IN</a>
+            <a href="#contato" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="profile-glow" aria-hidden="true"></div>
+          <div class="profile-frame">
+            <img id="profile-photo" src="assets/foto-perfil.webp" alt="Foto de perfil de Vitor Augusto Nasi" width="360" height="360" loading="eager" decoding="async">
+            <div class="profile-placeholder" role="img" aria-label="Avatar com as iniciais VN">VN</div>
+          </div>
+          <div class="tech-badge badge-python"><span>&lt;/&gt;</span> Python</div>
+          <div class="tech-badge badge-code"><span>&lt;/&gt;</span> Código</div>
+        </div>
+      </div>
+      <a class="scroll-indicator" href="#sobre" aria-label="Ir para sobre mim"><span></span></a>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-kicker">01. Conheça mais</p>
+          <h2>Sobre <span>mim</span></h2>
+        </header>
+        <div class="about-grid">
+          <article class="about-card glass-card reveal">
+            <p>Sou <strong>Vitor Augusto Nasi</strong>, estudante de programação e tecnologia, apaixonado por desenvolvimento de software e pelo universo da computação.</p>
+            <p>Minha jornada começou pelo interesse em entender como a tecnologia funciona e em desenvolver soluções através do código. Atualmente, estudo fundamentos que me ajudam a evoluir com consistência.</p>
+            <p>Meu objetivo é aprender novas tecnologias, aprofundar meus conhecimentos em cibersegurança e inteligência artificial e transformar ideias em soluções reais.</p>
+          </article>
+          <div class="about-details reveal reveal-delay">
+            <div class="detail-card"><span class="detail-number">01</span><div><h3>Em constante evolução</h3><p>Busco melhorar um pouco a cada projeto e estudo.</p></div></div>
+            <div class="detail-card"><span class="detail-number">02</span><div><h3>Aprendizado prático</h3><p>Transformo conceitos em exercícios e projetos.</p></div></div>
+            <div class="detail-card"><span class="detail-number">03</span><div><h3>Curiosidade técnica</h3><p>Interesse em desenvolvimento, redes e segurança.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="habilidades">
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-kicker">02. Tecnologias</p>
+          <h2>Minhas <span>habilidades</span></h2>
+        </header>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-icon">Py</div><h3>Python</h3><p>Estudando a linguagem, sintaxe e fundamentos da programação.</p><span class="skill-level">Estudando</span></article>
+          <article class="skill-card reveal"><div class="skill-icon">&lt;/&gt;</div><h3>HTML &amp; CSS</h3><p>Estruturação, estilização e construção de interfaces responsivas.</p><span class="skill-level">Em desenvolvimento</span></article>
+          <article class="skill-card reveal"><div class="skill-icon">Git</div><h3>Git &amp; GitHub</h3><p>Controle de versões e colaboração em projetos.</p><span class="skill-level">Estudando</span></article>
+          <article class="skill-card reveal"><div class="skill-icon">VS</div><h3>Visual Studio Code</h3><p>Uso do editor e ferramentas para produtividade no desenvolvimento.</p><span class="skill-level">Estudando</span></article>
+          <article class="skill-card reveal"><div class="skill-icon">Net</div><h3>Redes de Computadores</h3><p>Fundamentos de conectividade, protocolos e infraestrutura.</p><span class="skill-level">Estudando</span></article>
+          <article class="skill-card reveal"><div class="skill-icon">{ }</div><h3>Lógica de Programação</h3><p>Construção do raciocínio para resolver problemas com código.</p><span class="skill-level">Fundamentos</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-kicker">03. Trabalhos</p>
+          <h2>Projetos <span>e práticas</span></h2>
+        </header>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-preview preview-one"><div class="preview-window"><span></span><span></span><span></span></div><div class="preview-code">&lt;project /&gt;</div></div>
+            <div class="project-body"><span class="project-status">Em breve</span><h3>Primeiro projeto em desenvolvimento</h3><p>Este espaço está preparado para apresentar uma solução prática desenvolvida durante meus estudos.</p><div class="project-tags"><span>Tecnologia</span><span>Em definição</span></div><a class="project-link" href="https://github.com/VitorNasi" target="_blank" rel="noopener noreferrer">Ver no GitHub <span>↗</span></a></div>
+          </article>
+          <article class="project-card reveal reveal-delay">
+            <div class="project-preview preview-two"><div class="preview-orbit"></div><div class="preview-code">console.log()</div></div>
+            <div class="project-body"><span class="project-status">Espaço reservado</span><h3>Adicionar próximo projeto</h3><p>Quando um projeto estiver concluído, ele poderá ser destacado aqui com imagem, descrição e tecnologias.</p><div class="project-tags"><span>Em definição</span></div><a class="project-link muted-link" href="#contato">Adicionar GitHub <span>↗</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="formacao">
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-kicker">04. Trajetória</p>
+          <h2>Minha <span>formação</span></h2>
+        </header>
+        <div class="timeline">
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-content"><p class="timeline-period">Em andamento</p><h3>Análise e Desenvolvimento de Sistemas</h3><p>Curso superior em andamento, com foco no desenvolvimento de soluções e fundamentos da tecnologia.</p></div></article>
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-content"><p class="timeline-period">Em construção</p><h3>Cursos e estudos complementares</h3><p>Espaço reservado para cursos, certificações e formações que forem concluídos.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="section-kicker">05. Vamos conversar</p>
+          <h2>Entre em <span>contato</span></h2>
+        </header>
+        <div class="contact-card reveal">
+          <div class="contact-copy"><p class="contact-label">Estou aberto a oportunidades de aprendizado e desafios</p><h3>Vamos construir algo interessante?</h3><p>Você pode entrar em contato por e-mail ou acompanhar minha evolução nas redes.</p></div>
+          <div class="contact-links">
+            <a href="mailto:vitoraugusto.nasi123@gmail.com"><span class="contact-icon">@</span><div><small>E-mail</small><strong>vitoraugusto.nasi123@gmail.com</strong></div><span>↗</span></a>
+            <a href="https://github.com/VitorNasi" target="_blank" rel="noopener noreferrer"><span class="contact-icon">GH</span><div><small>GitHub</small><strong>VitorNasi</strong></div><span>↗</span></a>
+            <a href="#contato" class="placeholder-link" data-platform="LinkedIn"><span class="contact-icon">IN</span><div><small>LinkedIn</small><strong>Adicionar perfil</strong></div><span>↗</span></a>
+            <a href="#contato" class="placeholder-link" data-platform="Instagram"><span class="contact-icon">IG</span><div><small>Instagram</small><strong>Adicionar perfil</strong></div><span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><p>© <span id="current-year"></span> Vitor Augusto Nasi</p><p>Desenvolvido com HTML, CSS e JavaScript.</p></div></footer>
+  <button class="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
